@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <orderedit_adminhtml_ordereditbackend_index>
+	<reference name="content">
+	  <block type="orderedit/adminhtml_ordereditbackend" name="ordereditbackend" template="orderedit/ordereditbackend.phtml"/>
+	</reference>
+  </orderedit_adminhtml_ordereditbackend_index>
+</layout>

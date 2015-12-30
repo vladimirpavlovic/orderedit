@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Indaba_Orderedit>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.0.1</version>
+    </Indaba_Orderedit>
+  </modules>
+</config>

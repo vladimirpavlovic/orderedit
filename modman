@@ -1,0 +1,5 @@
+app/code/local/Indaba/Orderedit app/code/local/Indaba/Orderedit
+app/design/adminhtml/default/default/layout/orderedit.xml app/design/adminhtml/default/default/layout/orderedit.xml
+app/design/adminhtml/default/default/template/orderedit app/design/adminhtml/default/default/template/orderedit
+app/etc/modules/Indaba_Orderedit.xml app/etc/modules/Indaba_Orderedit.xml
+

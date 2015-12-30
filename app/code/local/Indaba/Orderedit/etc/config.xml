@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Indaba_Orderedit>
+      <version>0.0.1</version>
+    </Indaba_Orderedit>
+  </modules>
+  <global>
+    <helpers>
+      <orderedit>
+        <class>Indaba_Orderedit_Helper</class>
+      </orderedit>
+    </helpers>
+	<blocks>
+	  <orderedit>
+		<class>Indaba_Orderedit_Block</class>
+	  </orderedit>
+	</blocks>
+  </global>
+  <admin>
+	<routers>
+	  <orderedit>
+	    <use>admin</use>
+		<args>
+		  <module>Indaba_Orderedit</module>
+		  <frontName>admin_orderedit</frontName>
+		</args>
+	  </orderedit>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <orderedit module="orderedit">
+		<title>Orderedit</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <ordereditbackend module="orderedit">
+			<title>Backend Page Title</title>
+			<sort_order>0</sort_order>
+			<action>admin_orderedit/adminhtml_ordereditbackend</action>
+		  </ordereditbackend>
+		</children>
+	  </orderedit>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<orderedit translate="title" module="orderedit">
+			  <title>Orderedit</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <ordereditbackend translate="title">
+			<title>Backend Page Title</title>
+		  </ordereditbackend>
+			  </children>
+			</orderedit>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<orderedit>
+		  <file>orderedit.xml</file>
+		</orderedit>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 
